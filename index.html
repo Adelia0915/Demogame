@@ -70,18 +70,6 @@
             background-color: #1e88e5;
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mencegah membuka link demo di tab baru
-            const demoButtons = document.querySelectorAll('.btn-demo');
-            demoButtons.forEach(button => {
-                button.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    window.location.href = event.target.href; // Redirect ke link demo di jendela yang sama
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="container">
