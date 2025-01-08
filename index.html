@@ -70,6 +70,27 @@
             background-color: #1e88e5;
         }
     </style>
+    <script>
+        // Mencegah copy paste
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            alert("Fungsi salin tidak diizinkan.");
+        });
+
+        // Menonaktifkan klik kanan
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert("Klik kanan tidak diizinkan.");
+        });
+
+        // Menonaktifkan keyboard shortcut untuk salin (Ctrl+C) dan tempel (Ctrl+V)
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'v')) {
+                e.preventDefault();
+                alert("Shortcut keyboard tidak diizinkan.");
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="container">
