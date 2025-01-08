@@ -98,17 +98,10 @@
             }
         });
 
-        // Membuka halaman baru tanpa menampilkan URL di address bar
-        function openDemoWindow(url) {
-            var newWindow = window.open(url, '_blank', 'width=800,height=600,menubar=no,toolbar=no,location=no,status=no');
-            if (newWindow) {
-                newWindow.document.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                    alert("Klik kanan tidak diizinkan.");
-                });
-            } else {
-                alert("Terjadi kesalahan saat membuka jendela baru.");
-            }
+        // Fungsi untuk membuka link tanpa menampilkan URL
+        function openWindow(url) {
+            var win = window.open(url, '_blank', 'width=800,height=600,scrollbars=no,location=no,status=no,toolbar=no,menubar=no');
+            win.document.location = url; // Menetapkan URL ke jendela baru
         }
     </script>
 </head>
@@ -119,21 +112,30 @@
             <!-- Box 1-18 -->
             <div class="box">
                 <img src="https://i.ibb.co/JcdW6VS/WILDBANDITO.png" alt="Gambar 1">
-                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
-                <a href="javascript:void(0)" onclick="openDemoWindow('https://bit.ly/Wildbanditoezy777')" class="btn-demo">Mainkan Demo</a>
+                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://bit.ly/Wildbanditoezy777" class="btn-demo">Mainkan Demo</a>
             </div>
             <div class="box">
                 <img src="https://i.ibb.co/qy5Fd3m/Mahjong-ways-2.png" alt="Gambar 2">
-                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
-                <a href="javascript:void(0)" onclick="openDemoWindow('https://bit.ly/mahjongways2ezykasino777')" class="btn-demo">Mainkan Demo</a>
+                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://bit.ly/mahjongways2ezykasino777" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <!-- Additional 8 Boxes -->
+            <div class="box">
+                <img src="https://i.ibb.co/bRjq1J2/ICE-SCAPE-PG.png" alt="Gambar 11">
+                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://bit.ly/ezykasino777demopg" class="btn-demo">Mainkan Demo</a>
             </div>
             <div class="box">
-                <img src="https://i.ibb.co/zsthmZ4/WILD-BOUNTY-SHOWDOWN.png" alt="Gambar 3">
-                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
-                <a href="javascript:void(0)" onclick="openDemoWindow('https://bit.ly/wildboountyshowdownezy777')" class="btn-demo">Mainkan Demo</a>
+                <img src="https://i.ibb.co/x3TYBJ7/GANESHA.png" alt="Gambar 12">
+                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://bit.ly/GaneshaGoldEzykasino777" class="btn-demo">Mainkan Demo</a>
             </div>
-            <!-- Additional Boxes -->
+            <!-- More boxes here... -->
         </div>
+
+        <!-- Iframe for demo -->
+        <iframe src="https://example.com" title="Game Demo" allowfullscreen></iframe>
     </div>
 </body>
 </html>
