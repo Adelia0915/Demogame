@@ -69,40 +69,18 @@
         .box .btn-demo:hover {
             background-color: #1e88e5;
         }
-        iframe {
-            border: none;
-            width: 100%;
-            height: 600px;
-            max-width: 100%;
-            margin-top: 20px;
-        }
     </style>
     <script>
-        // Mencegah copy paste
-        document.addEventListener('copy', function(e) {
-            e.preventDefault();
-            alert("Fungsi salin tidak diizinkan.");
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mencegah membuka link demo di tab baru
+            const demoButtons = document.querySelectorAll('.btn-demo');
+            demoButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    window.location.href = event.target.href; // Redirect ke link demo di jendela yang sama
+                });
+            });
         });
-
-        // Menonaktifkan klik kanan
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-            alert("Klik kanan tidak diizinkan.");
-        });
-
-        // Menonaktifkan keyboard shortcut untuk salin (Ctrl+C) dan tempel (Ctrl+V)
-        document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey && (e.key === 'c' || e.key === 'v')) {
-                e.preventDefault();
-                alert("Shortcut keyboard tidak diizinkan.");
-            }
-        });
-
-        // Fungsi untuk membuka link tanpa menampilkan URL
-        function openWindow(url) {
-            var win = window.open(url, '_blank', 'width=800,height=600,scrollbars=no,location=no,status=no,toolbar=no,menubar=no');
-            win.document.location = url; // Menetapkan URL ke jendela baru
-        }
     </script>
 </head>
 <body>
@@ -110,32 +88,32 @@
         <h1>Selamat Datang Member Setia Ezykasino</h1>
         <div class="box-container">
             <!-- Box 1-18 -->
+            <!-- Existing 10 Boxes -->
             <div class="box">
                 <img src="https://i.ibb.co/JcdW6VS/WILDBANDITO.png" alt="Gambar 1">
-                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
                 <a href="https://bit.ly/Wildbanditoezy777" class="btn-demo">Mainkan Demo</a>
             </div>
             <div class="box">
                 <img src="https://i.ibb.co/qy5Fd3m/Mahjong-ways-2.png" alt="Gambar 2">
-                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
                 <a href="https://bit.ly/mahjongways2ezykasino777" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/zsthmZ4/WILD-BOUNTY-SHOWDOWN.png" alt="Gambar 3">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="https://bit.ly/wildboountyshowdownezy777" class="btn-demo">Mainkan Demo</a>
             </div>
             <!-- Additional 8 Boxes -->
             <div class="box">
                 <img src="https://i.ibb.co/bRjq1J2/ICE-SCAPE-PG.png" alt="Gambar 11">
-                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://t.ly/Antiblockezykasino" class="btn-main">Mainkan sekarang</a>
                 <a href="https://bit.ly/ezykasino777demopg" class="btn-demo">Mainkan Demo</a>
             </div>
             <div class="box">
                 <img src="https://i.ibb.co/x3TYBJ7/GANESHA.png" alt="Gambar 12">
-                <a href="javascript:void(0)" class="btn-main" onclick="openWindow('https://t.ly/Antiblockezykasino')">Mainkan sekarang</a>
+                <a href="https://t.ly/Antiblockezykasino" class="btn-main">Mainkan sekarang</a>
                 <a href="https://bit.ly/GaneshaGoldEzykasino777" class="btn-demo">Mainkan Demo</a>
             </div>
-            <!-- More boxes here... -->
-        </div>
-
-        <!-- Iframe for demo -->
-        <iframe src="https://i.ibb.co/pPRN0hC/FORTUNE.png" title="Game Demo" allowfullscreen></iframe>
-    </div>
-</body>
-</html>
+            <div class="box">
+                <img src="https://i.ibb.co/wc73GXh/GAMES-STONE.png" a
