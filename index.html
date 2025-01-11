@@ -30,7 +30,7 @@
         }
         .box-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
             gap: 15px;
             margin-top: 20px;
         }
@@ -39,15 +39,19 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
+            width: 159px; /* Sesuai ukuran gambar */
+            height: auto;
+            margin: auto;
             transition: transform 0.3s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center; /* Menjaga isi tetap rapi */
         }
         .box img {
-            width: 159px;  /* Ukuran gambar diubah menjadi 159px */
-            height: 180px; /* Ukuran gambar diubah menjadi 180px */
-            object-fit: cover; /* Agar gambar tidak terdistorsi */
+            width: 159px; /* Lebar gambar */
+            height: 180px; /* Tinggi gambar */
+            object-fit: cover;
         }
         .box:hover {
             transform: scale(1.05);
@@ -55,13 +59,12 @@
         .box a {
             text-decoration: none;
             color: #fff;
-            padding: 12px; /* Ukuran padding disesuaikan agar tombol proporsional */
-            font-size: 1em; /* Ukuran font tombol disesuaikan */
+            padding: 10px;
+            font-size: 0.9em;
             display: block;
             text-align: center;
-            border-radius: 0 0 8px 8px;
-            width: 159px; /* Lebar tombol menyesuaikan dengan ukuran gambar */
-            margin: 0 auto; /* Membuat tombol berada di tengah */
+            border-radius: 8px;
+            width: 100%; /* Menyesuaikan dengan kontainer */
         }
         .box .btn-main {
             background-color: #48de23;
