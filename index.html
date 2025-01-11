@@ -45,9 +45,9 @@
             justify-content: space-between;
         }
         .box img {
-            width: 159%;
-            height: 180px;
-            object-fit: cover;
+            width: 100%; /* Membuat gambar menyesuaikan lebar kontainer */
+            height: auto; /* Menjaga rasio gambar */
+            object-fit: contain; /* Menjaga proporsi gambar */
         }
         .box:hover {
             transform: scale(1.05);
