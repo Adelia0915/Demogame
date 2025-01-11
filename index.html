@@ -108,19 +108,27 @@
         <div class="box-container">
             <div class="box">
                 <img src="https://i.ibb.co/cT8GyDf/MAHJONG1.png" alt="Gambar 1">
-                <a href="https://t.ly/Antiblockezykasino" target="iframe1" class="btn-main">Mainkan sekarang</a>
-                <a href="https://m.pgsoft-games.com/65/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&__refer=m.pg-redirect.net&or=static.pgsoft-games.com" class="btn-demo">Mainkan Demo</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://m.pgsoft-games.com/65/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&__refer=m.pg-redirect.net&or=static.pgsoft-games.com')" class="btn-demo">Mainkan Demo</a>
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
             </div>
             <div class="box">
                 <img src="https://i.ibb.co/qy5Fd3m/Mahjong-ways-2.png" alt="Gambar 2">
-                <a href="https://t.ly/Antiblockezykasino" target="iframe1" class="btn-main">Mainkan sekarang</a>
-                <a href="https://m.pgsoft-games.com/65/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&__refer=m.pg-redirect.net&or=static.pgsoft-games.com" class="btn-demo">Mainkan Demo</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://m.pgsoft-games.com/65/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&__refer=m.pg-redirect.net&or=static.pgsoft-games.com')" class="btn-demo">Mainkan Demo</a>
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
             </div>
             <!-- Add more boxes here -->
         </div>
     </div>
 
     <!-- The iframe for loading the main link -->
-    <iframe name="iframe1"></iframe>
+    <iframe id="gameFrame" name="gameFrame"></iframe>
+
+    <script>
+        // Function to load the game inside the iframe
+        function loadGame(url) {
+            var iframe = document.getElementById('gameFrame');
+            iframe.src = url;
+        }
+    </script>
 </body>
 </html>
