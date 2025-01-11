@@ -102,14 +102,25 @@
         <div class="box-container">
             <div class="box">
                 <img src="https://i.ibb.co/cT8GyDf/MAHJONG1.png" alt="Gambar 1">
-                <a href="javascript:void(0);" onclick="window.open('https://bit.ly/mahjongezykasino7772', '_blank', 'noopener,noreferrer');" class="btn-demo">Mainkan Demo</a>
+                <a href="#" class="btn-main" onclick="window.open('https://bit.ly/mahjongezykasino7772', '_blank').location='about:blank'; return false;">Mainkan sekarang</a>
+                <a href="https://bit.ly/mahjongezykasino7772" class="btn-demo">Mainkan Demo</a>
             </div>
-            <!-- Repeat similar changes for other boxes -->
+            <div class="box">
+                <img src="https://i.ibb.co/qy5Fd3m/Mahjong-ways-2.png" alt="Gambar 2">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="https://bit.ly/mahjongways2ezykasino777" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <!-- More box items here -->
         </div>
     </div>
-
     <script>
-        // You can add additional JavaScript here if necessary
+        // Script untuk memastikan URL hanya muncul di jendela baru
+        function openWindowWithoutURL(url) {
+            var win = window.open(url, '_blank');
+            if (win) {
+                win.document.location = 'about:blank';
+            }
+        }
     </script>
 </body>
 </html>
