@@ -110,10 +110,14 @@
         <div class="box-container">
             <div class="box">
                 <img src="https://i.ibb.co/cT8GyDf/MAHJONG1.png" alt="Gambar 1">
+                <a href="javascript:void(0)" onclick="openFullscreen('https://m.pgsoft-games.com/65/index.html')" class="btn-demo">Mainkan Demo</a>
                 <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
-                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/mahjongezykasino7772')" class="btn-demo">Mainkan Demo</a>
             </div>
-            <!-- Repeat similar box structure for other games -->
+            <div class="box">
+                <img src="https://i.ibb.co/qy5Fd3m/Mahjong-ways-2.png" alt="Gambar 2">
+                <a href="javascript:void(0)" onclick="openFullscreen('https://m.pgsoft-games.com/65/index.html')" class="btn-demo">Mainkan Demo</a>
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            </div>
         </div>
     </div>
 
@@ -122,21 +126,22 @@
     <button id="closeBtn" onclick="closeFullscreen()">Tutup</button>
 
     <script>
-        // Function to open the game in fullscreen
-        function loadGame(url) {
+        // Function to make iframe fullscreen
+        function openFullscreen(url) {
             var iframe = document.getElementById('gameFrame');
             var closeBtn = document.getElementById('closeBtn');
-            iframe.src = url; // Set the iframe source to the provided URL
-            iframe.style.display = 'block'; // Show the iframe
-            closeBtn.style.display = 'block'; // Show the close button
+            iframe.src = url;
+            iframe.style.display = 'block';
+            closeBtn.style.display = 'block';
         }
 
         // Function to exit fullscreen
         function closeFullscreen() {
             var iframe = document.getElementById('gameFrame');
             var closeBtn = document.getElementById('closeBtn');
-            iframe.style.display = 'none'; // Hide the iframe
-            closeBtn.style.display = 'none'; // Hide the close button
+            iframe.src = '';
+            iframe.style.display = 'none';
+            closeBtn.style.display = 'none';
         }
     </script>
 </body>
